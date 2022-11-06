@@ -35,7 +35,7 @@ const AboutPage = (): JSX.Element => {
                 </div>
 
                 <div className="w-3/4 pb-6">
-                    <p>An avid hiker, I completed my first Camino de Santiago (Camino Frances)in 2018. The Camino Frances takes approximately 5 weeks to walk 800km from Saint-Jean-Pied-du-Port in France to Santiago de Compostela in Spain. Since then I have walked the Camino Primitivo, sections of the Camino del Norte and the Camino de Gran Canaria.</p>
+                    <p>An avid hiker, I completed my first Camino de Santiago (Camino Frances) in 2018. The Camino Frances takes approximately 5 weeks to walk and consists of an 800km route from Saint-Jean-Pied-du-Port in France to Santiago de Compostela in Spain. Since then I have walked the Camino Primitivo, sections of the Camino del Norte and the Camino de Gran Canaria.</p>
 
                 </div>
 

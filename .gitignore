@@ -2,3 +2,7 @@
 
 #
 /camino-frontend/node_modules
+
+/camino-backend/node_modules
+
+/camino-backend/.env
