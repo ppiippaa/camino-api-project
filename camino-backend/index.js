@@ -3,7 +3,7 @@ const app = express();
 const cors = require('cors');
 const mongoose = require('mongoose');
 const Albergue = require('./db/models/albergue');
-const {query} = require("express");
+
 
 
 app.use(cors());
