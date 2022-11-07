@@ -12,7 +12,7 @@ const useFetch = (url: string) => {
             setLoading(true);
             try {
                 const res = await fetch(url)
-                console.log(url)
+                console.log(res)
                 if (res.status !== 200) {
                     setLoading(false);
                     setError(true);
@@ -20,7 +20,7 @@ const useFetch = (url: string) => {
                 }
                 const data = await res.json();
                 setData(data)
-            } catch {
+            } catch (err){
                 setError(true);
             }
             setLoading(false);
@@ -28,7 +28,7 @@ const useFetch = (url: string) => {
         fetchData();
     }, [url])
 
-    return [loading, error, data];
+    return [loading, error,data];
 }
 
 export default useFetch;

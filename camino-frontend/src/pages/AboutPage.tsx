@@ -15,7 +15,7 @@ const AboutPage = (): JSX.Element => {
                 <h1 className="pt-16 pb-10 font-accent text-3xl tracking-wider">About</h1>
 
                 <div className="w-3/4 pb-6">
-                    <p>Access over to 4000 records of albergue information from the Camino Frances, Portuges, del Norte, Primitivo, Via de le Plata and Finisterra y Muxia.</p>
+                    <p>Access over to 2000 records of albergue information from the Camino Francés, Camino Primitivo, Camino Portugués, Camino del Norte, Vía de la Plata and Fisterra y Muxía.</p>
                 </div>
 
 
@@ -39,12 +39,12 @@ const AboutPage = (): JSX.Element => {
 
                 </div>
 
-                <div className="grid grid-cols-2 gap-8 pt-10 pb-20 ">
-                    <figure className="pt-8 pb-4 pl-8">
+                <div className="grid grid-cols-2 gap-8 pt-4 pb-20 ">
+                    <figure className="pt-8 pb-2 pl-8">
                         <img src={Gallery1} alt="Saint-Jean-Pied-du-Port"/>
                         {/*<figcaption className="absolute bottom-0  w-[calc(100%_-_1rem)] bg-blue py-2 text-yellow"><h4>Saint-Jean-Pied-du-Port</h4></figcaption>*/}
                     </figure>
-                    <figure className="pt-8 pb-4 pr-8">
+                    <figure className="pt-8 pb-2 pr-8">
                         <img src={Gallery2} alt="The Pyranees Mountains"/>
                         {/*<figcaption className="absolute bottom-0 w-[calc(100%_-_1rem)] py-2 bg-blue text-yellow" ><h4>The Pyranees Mountains</h4></figcaption>*/}
                     </figure>

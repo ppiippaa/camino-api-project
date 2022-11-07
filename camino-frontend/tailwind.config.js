@@ -9,6 +9,7 @@ module.exports = {
       'yellow': '#F9ED16',
       'lightYellow': '#fffdd8',
       'grey': '#646C73',
+      'lightGrey': '#abafb3',
       'white': '#fff',
       'black': '#000',
       'bg-yellow': '#fffcc1',
@@ -16,19 +17,9 @@ module.exports = {
     },
     fontFamily: {
       'accent' : ['Montserrat', 'sans-serif'],
-      'regular': ['Merriweather', 'serif']
+      'regular': ['Merriweather', 'serif'],
+      'code': ['IBM Plex Mono', 'mono space']
     },
-    // spacing: {
-    //   '1': '8px',
-    //   '2': '12px',
-    //   '3': '16px',
-    //   '4': '24px',
-    //   '5': '32px',
-    //   '6': '48px',
-    //   '7': '52px',
-    //   '10': '400px'
-    // },
-
     extend: {},
   },
   plugins: [],

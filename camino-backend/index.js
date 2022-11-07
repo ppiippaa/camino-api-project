@@ -60,20 +60,21 @@ app.get('/api/albergues', async (req, res) => {
 
 
     if (caminoQuery === null) {
-       return res.status(400).json({ error: 'Invalid camino parameter.'})
+
+       return res.status(400).json({ error: 'Incorrect camino parameter' })
     }
 
 
-    if(count > 50) {
-        return res.status(400).json({ error: 'Albergue count parameter out of range. Maximum 50 results.'})
+    if (count > 50) {
+        return res.status(400).json({ error: 'Albergue count out of range. Maximum 50 results.'})
     }
 
-    let queryCondtion = {}
+    let queryCondition = {}
     if (caminoQuery) {
-        queryCondtion.camino = caminoQuery;
+        queryCondition.camino = caminoQuery;
     }
 
-    const albergues = await Albergue.find(queryCondtion).skip((page - 1) * (count)).limit(count)
+    const albergues = await Albergue.find(queryCondition).skip((page - 1) * (count)).limit(count)
     if (albergues.length) {
         return res.json(albergues)
 
