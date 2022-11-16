@@ -7,4 +7,6 @@
 
 /camino-backend/.env
 
-/.idea
+/camino-frontend/.env
+
+/camino-frontend/.idea

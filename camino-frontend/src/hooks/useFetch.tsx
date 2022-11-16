@@ -1,10 +1,10 @@
 import {useEffect, useState} from "react";
 
 
-const useFetch = (url: string) => {
-    const [ loading, setLoading ] = useState(true);
-    const [ error, setError ] = useState(false);
-    const [ data, setData ] = useState<any>({});
+const useFetch = <T extends any>(url: string) => {
+    const [ loading, setLoading ] = useState<boolean>(true);
+    const [ error, setError ] = useState<boolean>(false);
+    const [ data, setData ] = useState<T | null>(null);
 
 
     useEffect( () => {
@@ -12,7 +12,6 @@ const useFetch = (url: string) => {
             setLoading(true);
             try {
                 const res = await fetch(url)
-                console.log(res)
                 if (res.status !== 200) {
                     setLoading(false);
                     setError(true);
@@ -28,7 +27,7 @@ const useFetch = (url: string) => {
         fetchData();
     }, [url])
 
-    return [loading, error,data];
+    return {loading, error, data};
 }
 
 export default useFetch;

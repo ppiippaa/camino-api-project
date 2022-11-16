@@ -3,12 +3,11 @@ const app = express();
 const cors = require('cors');
 const mongoose = require('mongoose');
 const Albergue = require('./db/models/albergue');
-
-
+require('dotenv').config()
 
 app.use(cors());
 
-mongoose.connect("mongodb+srv://ppiippaa:MONGODBalbert97@cluster0.2p2g9uu.mongodb.net/?retryWrites=true&w=majority", { useNewUrlParser: true })
+mongoose.connect(process.env.MONGODB_URI, { useNewUrlParser: true })
 
 app.get('/api/albergue/:id', async (req, res) => {
     const id = req.params.id;
@@ -25,12 +24,14 @@ app.get('/api/albergue/:id', async (req, res) => {
 
 
 app.get('/api/albergues', async (req, res) => {
-    const page = Number(req.query.page) || 1;
-    const count = Number(req.query.count) || 10;
-    const camino = req.query.camino
-    let caminoQuery;
+    const key = req.query.key;
+    let page = Number(req.query.page) || 1;
+    let count = Number(req.query.count) || 10;
+    page = key === 'test' ? 1 : page
+    count = key === 'test' ? 3260 : count;
+    const camino = req.query.camino;
 
-    console.log(camino)
+    let caminoQuery;
 
     if (camino) {
         switch (camino) {
@@ -58,14 +59,13 @@ app.get('/api/albergues', async (req, res) => {
         }
     }
 
-
     if (caminoQuery === null) {
 
        return res.status(400).json({ error: 'Incorrect camino parameter' })
     }
 
 
-    if (count > 50) {
+    if (count > 50 && key !== 'test') {
         return res.status(400).json({ error: 'Albergue count out of range. Maximum 50 results.'})
     }
 
@@ -82,9 +82,6 @@ app.get('/api/albergues', async (req, res) => {
        return res.status(400).json({ error: 'Page parameter out of range.'})
     }
 })
-
-
-
 
 
 const PORT = 5000

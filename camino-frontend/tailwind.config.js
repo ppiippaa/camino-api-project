@@ -13,7 +13,8 @@ module.exports = {
       'white': '#fff',
       'black': '#000',
       'bg-yellow': '#fffcc1',
-      'bg-blue': '#87b7fc'
+      'bg-blue': '#87b7fc',
+      'codeSnippetBlack': '#0C0D0E'
     },
     fontFamily: {
       'accent' : ['Montserrat', 'sans-serif'],
