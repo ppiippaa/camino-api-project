@@ -1,4 +1,4 @@
-import {GoogleMap, useLoadScript, MarkerF, InfoWindow } from "@react-google-maps/api";
+import {GoogleMap, useLoadScript, MarkerF } from "@react-google-maps/api";
 import {Albergue} from "../types/albergue";
 import React, {useState} from "react";
 import InfoBox from "./InfoBox";
@@ -31,6 +31,7 @@ const Map = ( { data }: Props ): JSX.Element => {
             zoom={5}
             center={{lat: 42.605556, lng: -5.570000}}
             mapContainerClassName="h-5/6 w-5/6"
+            data-cy='googleMap'
         >
                 {
                     // @ts-ignore
@@ -41,7 +42,7 @@ const Map = ( { data }: Props ): JSX.Element => {
                             onClick={() => {
                                 setSelectedAlbergue(d)
                             }}
-
+                            data-cy='marker'
                             // icon={selectedAlbergue !== null && selectedAlbergue.id === d.id ? 'http://maps.google.com/mapfiles/kml/paddle/ylw-circle.png' : 'http://maps.google.com/mapfiles/kml/paddle/blu-circle.png'}
                         />
                     )

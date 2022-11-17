@@ -38,7 +38,7 @@ const DocInfo = ({ url, title, description}: Props): JSX.Element => {
 
 
     return (
-        <div className="py-6 pl-6-4 md:w-4/5 md:pl-8 flex flex-col items-center justify-evenly md:items-start w-full">
+        <div className="py-6 pl-6-4 md:w-4/5 md:pl-8 flex flex-col items-center justify-evenly md:items-start w-full" data-cy='docInfo'>
 
 
             <h2 className="font-code font-bold text-xl pb-8 tracking-wider">{title}</h2>

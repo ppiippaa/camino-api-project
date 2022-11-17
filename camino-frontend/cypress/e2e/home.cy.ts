@@ -1,6 +1,6 @@
 describe('Home page testing', () => {
   beforeEach(() => {
-    cy.visit('localhost:3000')
+    cy.visit('/')
   })
 
   it('should have underlined nav link in nav bar', () => {

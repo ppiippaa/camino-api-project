@@ -16,8 +16,7 @@ const ApiPage = (): JSX.Element => {
 
 
 
-                <div className="info-container flex flex-col items-center justify-center md:justify-start">
-
+                <div className="info-container flex flex-col items-center justify-center md:justify-start" data-cy='requestContainer'>
                     <div className="w-full">
                         <DocInfo url={'http://localhost:5000/api/albergue/636a3c49d09200844a57cb1a'} title={'Single Albergue'} description={'Get a single albergue based on albergue ID parameter.'} />
                     </div>

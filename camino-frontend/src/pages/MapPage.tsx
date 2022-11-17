@@ -29,8 +29,8 @@ const MapPage = (): JSX.Element => {
         <div className="h-[calc(100vh_-_9rem)] flex flex-col items-center">
             <div className="pb-20 w-10/12 h-full bg-bg-yellow flex flex-col items-center">
                 <h1 className="pt-16 pb-8 text-3xl font-accent">Map</h1>
-                { isMobile  && <div><h3 className='font-code'>Please switch to desktop for a better loading experience</h3></div>}
-                <Map data={data.filter(d => d.coordinates)}/>
+                { isMobile  && <div data-cy='mobileMessage'><h3 className='font-code'>Please switch to desktop for a better loading experience</h3></div>}
+                <Map data={data.filter(d => d.coordinates)} data-cy='map'/>
             </div>
         </div>
     );
