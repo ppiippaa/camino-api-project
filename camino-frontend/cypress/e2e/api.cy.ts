@@ -55,9 +55,7 @@ describe('API page tests', () => {
         })
     })
 
-
-
-    it('should have github href in footer', () => {
+    it('should have github link in footer', () => {
         cy.get("a[data-cy='github']").should('have.attr', 'href').and('include', "https://www.github.com/ppiippaa")
     })
 

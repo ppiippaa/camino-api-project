@@ -12,7 +12,6 @@ const Map = ( { data }: Props ): JSX.Element => {
     // @ts-ignore
     const mapApiKey = process.env.REACT_APP_GOOGLE_KEY.toString();
 
-
     const {isLoaded} = useLoadScript({googleMapsApiKey: mapApiKey})
     const [ selectedAlbergue, setSelectedAlbergue ] = useState<Albergue | null>(null);
 
@@ -23,8 +22,6 @@ const Map = ( { data }: Props ): JSX.Element => {
             </div>
         )
     }
-
-
 
     return (
         <GoogleMap

@@ -1,14 +1,12 @@
-import {useEffect, useState} from "react";
-
+import { useEffect, useState } from "react";
 
 const useFetch = <T extends any>(url: string) => {
     const [ loading, setLoading ] = useState<boolean>(true);
     const [ error, setError ] = useState<boolean>(false);
     const [ data, setData ] = useState<T | null>(null);
 
-
     useEffect( () => {
-        const fetchData = async () =>{
+        const fetchData = async () => {
             setLoading(true);
             try {
                 const res = await fetch(url)

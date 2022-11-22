@@ -1,5 +1,3 @@
-import React from 'react';
-import './App.css';
 import NavBar from "./components/NavBar";
 import {Route, Routes} from "react-router-dom";
 import AboutPage from "./pages/AboutPage";
@@ -11,7 +9,7 @@ import Footer from "./components/Footer";
 
 function App() {
     return (
-        <div className="App text-grey">
+        <div className="App text-grey text-center">
             <NavBar />
             <Routes>
                 <Route path='/about' element={<AboutPage />}/>

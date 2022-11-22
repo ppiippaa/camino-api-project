@@ -16,7 +16,7 @@ describe('Home page testing', () => {
     cy.get("p[data-cy='title']").should('have.text', 'A free API for Camino de Santiago albergue JSON data')
   })
 
-  it('should have github href in footer', () => {
+  it('should have github link in footer', () => {
     cy.get("a[data-cy='github']").should('have.attr', 'href').and('include', "https://www.github.com/ppiippaa")
   })
 

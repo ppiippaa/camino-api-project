@@ -1,13 +1,9 @@
-import React from "react";
 import Gallery1 from '../assets/gallery1.jpg'
 import Gallery2 from '../assets/gallery2.jpg';
 import Gallery3 from '../assets/gallery3.jpg';
 import Gallery4 from '../assets/gallery4.jpg';
 
-
-
 const AboutPage = (): JSX.Element => {
-
     return (
         <div className="min-h-screen flex flex-col items-center " >
             <div className="h-auto w-10/12 bg-bg-yellow flex flex-col justify-center items-center leading-7 text-justify md:text-center" >
@@ -17,7 +13,6 @@ const AboutPage = (): JSX.Element => {
                 <div className="w-3/4 pb-6">
                     <p>Access over to 2000 records of albergue information from the Camino Francés, Camino Primitivo, Camino Portugués, Camino del Norte, Vía de la Plata and Fisterra y Muxía.</p>
                 </div>
-
 
                 <p className="pb-6 px-2 w-3/4">Data from <a data-cy="gronzeLink" className="hover:text-blue font-bold" href="http://www.gronze.com">Gronze.com</a>.</p>
                 <p className="pb-6 px-2 w-3/4">This project is not for commercial purposes, it was built for educative reasons.</p>

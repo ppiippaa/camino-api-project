@@ -4,15 +4,12 @@ import useFetch from "../hooks/useFetch";
 import {Albergue} from "../types/albergue";
 import { isMobile } from 'react-device-detect'
 
-
 const MapPage = (): JSX.Element => {
     const exampleUrl = 'http://localhost:5000/api/albergues?key=test';
     const  {loading, error, data}  = useFetch<Albergue[]>(exampleUrl)
 
-
     if (loading) {
         return (
-
             <div className="h-[calc(100vh_-_9rem)] flex flex-col items-center">
                 <div className="pb-20 w-10/12 h-full bg-bg-yellow flex flex-col items-center">
                         <h1 className="pt-16 pb-8 text-3xl font-accent">Map</h1>
@@ -22,7 +19,7 @@ const MapPage = (): JSX.Element => {
         )
     }
     if (error || data === null) {
-        return <h2>Error</h2>
+        return <h2 className='font-code'>Error loading content</h2>
     }
 
     return (
