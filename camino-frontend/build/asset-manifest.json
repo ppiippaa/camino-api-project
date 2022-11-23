@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/static/css/main.affac970.css",
+    "main.js": "/static/js/main.9712c336.js",
+    "static/media/gallery3.jpg": "/static/media/gallery3.a59f2f83410777f94a67.jpg",
+    "static/media/gallery2.jpg": "/static/media/gallery2.22ca42cd0caddbf1adda.jpg",
+    "static/media/gallery1.jpg": "/static/media/gallery1.468f5cfedcd1bb186498.jpg",
+    "static/media/gallery4.jpg": "/static/media/gallery4.50054d4b6e5fd10d49b5.jpg",
+    "static/media/github-logo.png": "/static/media/github-logo.5794f9ea467a0485c1eb.png",
+    "static/media/camino-shell-removebg.png": "/static/media/camino-shell-removebg.cc52e95194b7827434ec.png",
+    "index.html": "/index.html",
+    "main.affac970.css.map": "/static/css/main.affac970.css.map",
+    "main.9712c336.js.map": "/static/js/main.9712c336.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.affac970.css",
+    "static/js/main.9712c336.js"
+  ]
+}

@@ -1,11 +1,10 @@
-import React from 'react';
 import Map from '../components/Map'
 import useFetch from "../hooks/useFetch";
-import {Albergue} from "../types/albergue";
+import { Albergue } from "../types/albergue";
 import { isMobile } from 'react-device-detect'
 
 const MapPage = (): JSX.Element => {
-    const exampleUrl = 'http://localhost:5000/api/albergues?key=test';
+    const exampleUrl = `${process.env.REACT_APP_BASE_URL}/api/albergues?key=test`;
     const  {loading, error, data}  = useFetch<Albergue[]>(exampleUrl)
 
     if (loading) {
