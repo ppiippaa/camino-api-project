@@ -23,7 +23,7 @@ const AboutPage = (): JSX.Element => {
                         <li>MongoDB</li>
                         <li>Mongoose</li>
                         <li>Node/Express</li>
-                        <li>React.js</li>
+                        <li>ReactJS</li>
                         <li>Typescript</li>
                         <li>Tailwindcss</li>
                     </ul>
