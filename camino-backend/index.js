@@ -3,11 +3,14 @@ const app = express();
 const cors = require('cors');
 const mongoose = require('mongoose');
 const Albergue = require('./db/models/albergue');
-require('dotenv').config()
+require('dotenv').config();
 
 app.use(cors());
+app.use(express.static('build'));
 
-mongoose.connect(process.env.MONGODB_URI, { useNewUrlParser: true })
+mongoose.connect(process.env.MONGODB_URI, { useNewUrlParser: true });
+
+
 
 app.get('/api/albergue/:id', async (req, res) => {
     const id = req.params.id;
@@ -84,7 +87,7 @@ app.get('/api/albergues', async (req, res) => {
 })
 
 
-const PORT = 5000
+const PORT = process.env.PORT ||  5000
 app.listen(PORT, () => {
     console.log(`Server running on port ${PORT}`)
 })
