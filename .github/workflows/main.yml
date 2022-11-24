@@ -2,13 +2,13 @@ name: Cypress E2E tests
 on: [push]
 jobs: 
   cypress-run:
-    runs-on: linux-latest
+    runs-on: ubuntu-latest
     steps:
       - name: Checkout
         uses: actions/checkout@v3
       - name: Cypress.io
         uses: cypress-io/github-action@v4
         with: 
-          start: npm start 
+          start: npm run cypress:open
      
       
