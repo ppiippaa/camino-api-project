@@ -11,8 +11,10 @@ jobs:
       - name: Cypress run
         uses: cypress-io/github-action@v4.2.1
         with:
+          install-command: npm install --force
           working-directory: camino-frontend
           build: npm run build
           start: npm start
-     
+
+
       
