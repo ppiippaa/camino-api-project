@@ -1,6 +1,7 @@
 describe('API page tests', () => {
     beforeEach(() => {
         cy.visit('/api')
+        cy.wait(1500)
     })
 
     it('should have underlined nav link in nav bar', () => {
