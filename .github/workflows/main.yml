@@ -14,6 +14,7 @@ jobs:
           install-command: npm install --force
           working-directory: camino-frontend
           start: npm start
+          browser: chrome
 
 
       
