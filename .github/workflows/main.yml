@@ -2,7 +2,7 @@ name: Cypress E2E tests
 on: [push]
 jobs: 
   cypress-run:
-    runs-on: windows-latest
+    runs-on: linux-latest
     steps:
       - name: Checkout
         uses: actions/checkout@v3
