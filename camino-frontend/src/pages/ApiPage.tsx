@@ -6,7 +6,7 @@ const ApiPage = (): JSX.Element => {
     return (
         <div className="min-h-[calc(100vh_-_5rem)] flex flex-col items-center md:items-left">
             <div className="pb-16 w-10/12 bg-bg-yellow text-center md:text-left">
-                <h1 className="pt-16 pb-8 pl-8 font-accent text-3xl tracking-wider">APII Documentation</h1>
+                <h1 className="pt-16 pb-8 pl-8 font-accent text-3xl tracking-wider">API Documentation</h1>
                 <div className="info-container flex flex-col items-center justify-center md:justify-start" data-cy='requestContainer'>
                     <div className="w-full">
                         <DocInfo url={`${process.env.REACT_APP_BASE_URL}/api/albergue/636a3c49d09200844a57cb1a`} title={'Single Albergue'} description={'Get a single albergue based on albergue ID parameter.'} />
