@@ -13,7 +13,6 @@ jobs:
         with:
           install-command: npm install --force
           working-directory: camino-frontend
-          build: npm run build
           start: npm start
 
 
