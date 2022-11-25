@@ -10,7 +10,7 @@ describe('API page tests', () => {
 
 
     it('should render 6 DocInfo components', () => {
-        cy.get("div[data-cy='requestContainer']").children().should('have.length', 6)
+        cy.get("div[data-cy='docInfo']").should('have.length', 6)
     })
 
 
