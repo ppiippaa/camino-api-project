@@ -81,4 +81,3 @@ Available optional parameters:
   }
 ```
 ---
-## License
