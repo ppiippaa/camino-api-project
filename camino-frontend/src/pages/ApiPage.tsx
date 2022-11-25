@@ -1,5 +1,4 @@
 import DocInfo from "../components/DocInfo";
-import '../components/DocInfo.css';
 
 const ApiPage = (): JSX.Element => {
 
