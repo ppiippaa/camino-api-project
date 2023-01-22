@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/camino-api-project/static/css/main.7493ccd7.css",
-    "main.js": "/camino-api-project/static/js/main.6975924c.js",
+    "main.js": "/camino-api-project/static/js/main.ad51f54e.js",
     "static/media/gallery3.jpg": "/camino-api-project/static/media/gallery3.a59f2f83410777f94a67.jpg",
     "static/media/gallery2.jpg": "/camino-api-project/static/media/gallery2.22ca42cd0caddbf1adda.jpg",
     "static/media/gallery1.jpg": "/camino-api-project/static/media/gallery1.468f5cfedcd1bb186498.jpg",
@@ -10,10 +10,10 @@
     "static/media/camino-shell-removebg.png": "/camino-api-project/static/media/camino-shell-removebg.cc52e95194b7827434ec.png",
     "index.html": "/camino-api-project/index.html",
     "main.7493ccd7.css.map": "/camino-api-project/static/css/main.7493ccd7.css.map",
-    "main.6975924c.js.map": "/camino-api-project/static/js/main.6975924c.js.map"
+    "main.ad51f54e.js.map": "/camino-api-project/static/js/main.ad51f54e.js.map"
   },
   "entrypoints": [
     "static/css/main.7493ccd7.css",
-    "static/js/main.6975924c.js"
+    "static/js/main.ad51f54e.js"
   ]
 }
