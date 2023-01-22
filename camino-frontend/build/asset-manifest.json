@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/static/css/main.affac970.css",
+    "main.css": "/static/css/main.7493ccd7.css",
     "main.js": "/static/js/main.9712c336.js",
     "static/media/gallery3.jpg": "/static/media/gallery3.a59f2f83410777f94a67.jpg",
     "static/media/gallery2.jpg": "/static/media/gallery2.22ca42cd0caddbf1adda.jpg",
@@ -9,11 +9,11 @@
     "static/media/github-logo.png": "/static/media/github-logo.5794f9ea467a0485c1eb.png",
     "static/media/camino-shell-removebg.png": "/static/media/camino-shell-removebg.cc52e95194b7827434ec.png",
     "index.html": "/index.html",
-    "main.affac970.css.map": "/static/css/main.affac970.css.map",
+    "main.7493ccd7.css.map": "/static/css/main.7493ccd7.css.map",
     "main.9712c336.js.map": "/static/js/main.9712c336.js.map"
   },
   "entrypoints": [
-    "static/css/main.affac970.css",
+    "static/css/main.7493ccd7.css",
     "static/js/main.9712c336.js"
   ]
 }
