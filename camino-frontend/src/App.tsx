@@ -17,6 +17,7 @@ function App() {
                 <Route path='/map' element={<MapPage />}/>
                 <Route path='/api' element={<ApiPage />}/>
                 <Route path='*' element={<NotFountPage />}/>
+                <Route path='camino-api-project' element={<HomePage />}/>
             </Routes>
             <Footer />
         </div>
